@@ -73,7 +73,7 @@ function Reviews() {
           we speak through our users
         </p>
       </motion.div>
-      <motion.div style={risponsive ? { y } : { x }} className="!p-4">
+      <motion.div style={risponsive ? { y } : { x }} className="!p-4 ">
         <div className="grid  grid-cols-1 sm:grid-cols-2 [@media(min-width:1200px)]:grid-cols-4 max-sm:gap-4 sm:gap-4 lg:gap-6 md:gap-4">
           {testimonials.map((testimonial, index) => (
             <ReviewCard
