@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Timer, ArrowRightCircle, ArrowLeftCircle, RotateCcw, AlertTriangle } from "lucide-react";
 
 const QuizInstructions = () => {

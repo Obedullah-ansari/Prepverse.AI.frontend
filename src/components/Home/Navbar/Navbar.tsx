@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { DollarSign, Headset, HomeIcon, ArrowBigRightIcon } from "lucide-react";
+import { DollarSign, Headset, HomeIcon } from "lucide-react";
 
 function Navbar() {
   const { scrollYProgress } = useScroll();
