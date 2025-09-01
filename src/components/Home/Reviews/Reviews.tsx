@@ -27,7 +27,7 @@ const testimonials = [
       "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
     rating: 5,
     testimonial:
-      "Absolutely phenomenal! The interactive exercises and real world projects made all the difference. I went from beginner to job-ready in just three months.",
+      "Absolutely phenomenal! The interactive exercises and realworld projects made all the difference. I went from beginner to job-ready in just three months.",
   },
   {
     name: "Ayesha Sharma",
@@ -74,7 +74,7 @@ function Reviews() {
         </p>
       </motion.div>
       <motion.div style={risponsive ? { y } : { x }} className="!p-4">
-        <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-sm:gap-4 sm:gap-4 lg:gap-8 md:gap-4">
+        <div className="grid  grid-cols-1 sm:grid-cols-2 [@media(min-width:1200px)]:grid-cols-4 max-sm:gap-4 sm:gap-4 lg:gap-6 md:gap-4">
           {testimonials.map((testimonial, index) => (
             <ReviewCard
               key={index}

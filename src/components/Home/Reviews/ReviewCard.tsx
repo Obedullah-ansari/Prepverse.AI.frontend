@@ -11,7 +11,7 @@ interface TestimonialCardProps {
 const ReviewCard: React.FC<TestimonialCardProps> = ({ name, avatar, rating, testimonial }) => {
   return (
     <div 
-    className={`bg-neutral-100 md:w-[20] sm:w-full max-sm:w-full lg:w-[20rem] rounded-2xl !p-5 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100`}>
+    className={`bg-neutral-100 md:w-[20] sm:w-full max-sm:w-full lg:h-[13.5rem] lg:w-[20rem] rounded-2xl !p-5 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100`}>
       <div className="flex items-center !mb-4">
         <img
           src={avatar}
