@@ -1,6 +1,7 @@
 import  { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import ReviewCard from "./ReviewCard";
+import bgImage from "../../../assets/slabs.jpg";
 import { useMediaQuery } from "react-responsive";
 
 const testimonials = [
@@ -10,7 +11,7 @@ const testimonials = [
       "https://plus.unsplash.com/premium_photo-1689977927774-401b12d137d6?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     rating: 5,
     testimonial:
-      "The online courses completely transformed my career! The instructors were knowledgeable and the platform was so easy to use. I've already recommended it to all my colleagues.",
+      "The online courses completely transformed my career! The instructors were knowledgeable and the platform was easy to use. I've already recommended it to all my colleagues.",
   },
   {
     name: "John Alex",
@@ -18,7 +19,7 @@ const testimonials = [
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
     rating: 4,
     testimonial:
-      "Great learning experience overall. The content was well structured and practical. The only reason I'm not giving 5 stars is that I wish there were more advanced topics available.",
+      "Great learning experience overall. The content was well structured and practical. I just wish there were more advanced topics available.",
   },
   {
     name: "Cody Roods",
@@ -26,18 +27,18 @@ const testimonials = [
       "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
     rating: 5,
     testimonial:
-      "Absolutely phenomenal! The interactive exercises and real world projects made all the difference. I went from beginner to job-ready in just three months thanks to this program.",
+      "Absolutely phenomenal! The interactive exercises and real world projects made all the difference. I went from beginner to job-ready in just three months.",
   },
   {
-    name: "Cody Roods",
+    name: "Ayesha Sharma",
     avatar:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
     rating: 5,
     testimonial:
-      "Absolutely phenomenal! The interactive exercises and real world projects made all the difference. I went from beginner to job-ready in just three months thanks to this program.",
+      "The DSA planner and mock interview features helped me stay consistent and confident. The AI suggestions were on point and made my prep efficient!",
   },
-  
 ];
+
 
 function Reviews() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -58,7 +59,8 @@ function Reviews() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full  overflow-hidden max-sm:h-auto  sm:h-auto lg:h-[100vh] gap-5 flex flex-col justify-center items-center bg-[url('src/assets/slabs.jpg')] bg-cover bg-center bg-no-repeat bg-fixed"
+      style={{ backgroundImage: `url(${bgImage})` }}
+      className="relative w-full  overflow-hidden max-sm:h-auto  sm:h-auto lg:h-[100vh] gap-5 flex flex-col justify-center items-center  bg-cover bg-center bg-no-repeat bg-fixed"
     >
       <motion.div
         style={{ y: yy }}
